@@ -88,8 +88,9 @@ class Calculator {
     this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand)
     if (this.operation != null) {
       this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+    } else {
+      this.previousOperandTextElement.innerText = ''
     }
-    
   }
 }
 
